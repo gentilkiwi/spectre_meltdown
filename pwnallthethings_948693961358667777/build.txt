@@ -1,3 +1,2 @@
-cl /nologo /c /Od /Ob0 /FoCacheAttack.obj CacheAttack.cpp
-ml64 /nologo /c /Fo run_attemp.obj run_attempt.asm
-link /nologo /out:ca.exe run_attemp.obj CacheAttack.obj
+ml64 /c /Fo run_attempt.obj run_attempt.asm
+cl /Od /Ob0 CacheAttack.cpp /link /out:ca.exe run_attempt.obj
